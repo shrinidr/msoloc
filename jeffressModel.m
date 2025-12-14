@@ -1,7 +1,7 @@
 function [] = jeffressModel()
 % we use 8 neurons for simplicity purposes.
 % negative ITD means input reaches right ear first
-neuron_itds = [-255, -245, -238, -50, 0, 245, 250, 255];
+neuron_itds = [-255, -200, -100, -50, 0, 245, 250, 255];
 left_delay = zeros(1, 8);
 right_delay = zeros(1, 8);
 
@@ -129,4 +129,5 @@ legend([h_red, h_blue], ...
        'Location', 'best');
 
 title('Population Coding of Sound Azimuth');
+
 end
